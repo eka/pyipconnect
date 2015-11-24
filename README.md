@@ -8,3 +8,5 @@
 . run `pip install -r requirements.txt`
 . copy .config.template to .config and fill your settings
 . and then run `./connect.py`
+
+### You can add this script to your crontab
