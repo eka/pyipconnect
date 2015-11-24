@@ -15,8 +15,17 @@ def is_logged_in():
 
 
 def login():
-    # you should set ALLIANCE_USER and ALLIANCE_PASS in the .config file in the same directory
-    r = requests.post(LOGIN_URL.format(os.environ.get('ALLIANCE_HOST')), data={'login': 1, 'user': os.environ.get('ALLIANCE_USER'), 'pass': os.environ.get('ALLIANCE_PASS')})
+    # you should set ALLIANCE_USER and ALLIANCE_PASS in the .config file in the
+    # same directory
+    data = {
+        'login': 1,
+        'user': os.environ.get('ALLIANCE_USER'),
+        'pass': os.environ.get('ALLIANCE_PASS')
+    }
+    r = requests.post(
+        LOGIN_URL.format(os.environ.get('ALLIANCE_HOST')),
+        data=data,
+    )
     assert r.status_code == 200
 
 
