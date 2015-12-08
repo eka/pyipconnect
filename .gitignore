@@ -1,2 +1,7 @@
 .config
 .env
+.idea
+build
+dist
+*.egg-info
+

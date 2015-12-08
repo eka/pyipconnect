@@ -4,9 +4,8 @@
 
 ### Installation instructions
 
-* create a virtualenv and activate it
-* run `pip install -r requirements.txt`
-* copy .config.template to .config and fill your settings
-* and then run `./connect.py`
+* run `pip install pyipconnect`
+* and then run `ipconnect --username=<USERNAME> --password=<PASSWORD>`
+* try `ipconnect --help` to see all the commands
 
-### You can add this script to your crontab
+### You can add this command to your crontab
