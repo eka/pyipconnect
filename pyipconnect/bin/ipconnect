@@ -58,7 +58,7 @@ def main():
         print("{} Not logged in, trying to login".format(datetime.now()))
         connection.login()
         assert connection.is_logged_in()
-        print("{) Login successful".format(datetime.now()))
+        print("{} Login successful".format(datetime.now()))
     else:
         print("{} Already logged in".format(datetime.now()))
 
