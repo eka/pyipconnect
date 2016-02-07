@@ -14,13 +14,13 @@ def get_requirements(filename='requirements.txt'):
     return [l for l in lines if l and not l.startswith('#')]
 
 
-version = '0.0.6'
+version = '0.0.7'
 
 setup(
     name='pyipconnect',
     version=version,
     description='Utility to connect to Alliance Internet (India).',
-    long_description=open('./README.md').read(),
+    long_description="""Very simple python script for auto login to alliance web login""",
     url='http://github.com/eka/pyipconnect',
     author='Esteban (Eka) Feldman',
     author_email='esteban.feldman@gmail.com',
