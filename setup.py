@@ -14,7 +14,7 @@ def get_requirements(filename='requirements.txt'):
     return [l for l in lines if l and not l.startswith('#')]
 
 
-version = '0.0.5'
+version = '0.0.6'
 
 setup(
     name='pyipconnect',
